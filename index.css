@@ -66,12 +66,7 @@ h1 {
 }
 
 
-.card :hover .image {
-  opacity: 0.3;
-}
-.card :hover .middle {
-  opacity: 1;
-}
+
 .text {
   background-color: #04AA6D;
   color: rgb(147, 82, 82);
