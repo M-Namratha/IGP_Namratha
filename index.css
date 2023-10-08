@@ -401,7 +401,7 @@ figcaption {
   }
 }
 
-[class*="col-"] {
+.col-3{
   float: left;
 border: solid;
 border-radius: 1px 5px;
