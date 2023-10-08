@@ -64,6 +64,13 @@ h1 {
 .carousel-inner :hover .middle {
   opacity: 1;
 }
+.card :hover .image {
+  opacity: 0.2;
+}
+
+.card :hover .middle {
+  opacity: 1;
+}
 
 
 
