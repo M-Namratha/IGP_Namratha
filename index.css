@@ -2,6 +2,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  background-image:url('obg.jpg') ;
 }
 
 /* Clear any floats to prevent layout issues */
@@ -10,12 +11,97 @@ body {
   clear: both;
   display: table;
 }
+.h1{
+  margin-top:250px;
+}
 
-#bnr{
+
+
+.navbar {
+  background-color: #7d8553;
+  height: 80px;
+  margin: 20px;
+  border-color: rgb(54, 66, 14); border-style: solid; border-width: 2.5px;
+  padding: 0.2rem;
+}
+
+.navbar-brand {
+ 
+padding: o.5rem;
+
+transition: 0.3s color;
+}
+
+.login-button {
+  background-color: #a82c4f;
+  color: #fff;
+  font-size: 20px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+  background-color: #a9edad;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 100px;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #c24672;
+  font-weight: 500;
+  position: relative;
+  font-size: 15px;
 
 }
 
-#mainDiv {
+.nav-link:hover, .nav-link.active {
+  color: #000;
+}
+
+@media (min-width: 991px) {
+  .nav-link::before{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: #009970;
+      visibility: hidden;
+      transition: 0.3s ease-in-out;
+  }
+
+}
+
+  .nav-link:hover::before, .nav-link.active::before {
+      width: 100%;
+      visibility: visible;
+  }
+
+
+
+
+.igp{
+ margin-top: 470px;
+  height: 20px;
+}
+
+.m1 {
+  width: 100%;
+  display: inline-block;
+}
+.m {
   width: 100%;
   display: inline-block;
 }
@@ -50,11 +136,11 @@ h1 {
   text-align: center;
 }
 
-.blog:hover .image {
+.blog :hover .image {
   opacity: 0.2;
 }
 
-.blog:hover .middle {
+.blog :hover .middle {
   opacity: 1;
 }
 
@@ -83,7 +169,7 @@ h1 {
 }
 
 #bnr {
-  margin-top: 130px;
+  margin-top: 170px;
   height: 150px;
   width: 100%;
   border: 10px 20px solid #e777b6;
@@ -163,41 +249,6 @@ h1 {
   box-sizing: border-box;
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font: inherit;
-  margin: 0;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  width: 100%;
-  left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content .header {
-  background: red;
-  padding: 16px;
-  color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 /* Create three equal columns that floats next to each other */
 .column {
@@ -217,65 +268,7 @@ h1 {
   text-align: left;
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-.column a:hover {
-  background-color: #ddd;
-}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #c4d478;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 20px 150px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #e3b0e8;
-  color: white;
-}
-
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 76px;
-  border: none;
-  font-size: 17px;
-}
 
 figcaption {
   background-color: black;
@@ -405,20 +398,153 @@ figcaption {
 
 .col-3{
   float: left;
-border: solid;
-border-radius: 1px 5px;
-border-top-right-radius: 3px;
-width: 100%;
+width: 12.5%;
+border: 2px solid rgb(240, 69, 69);
 }
 
-.col-1 {width: 12.5%;}
-.col-2 {width: 12.5%;}
-.col-3 {width: 12.5%;}
-.col-4 {width: 12.5%;}
-.col-5 {width: 12.5%;}
-.col-6 {width: 12.5%;}
-.col-7 {width: 12.5%;}
-.col-8 {width: 12.5%;}
+.dark-mode {
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+}
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: sans-serif;
+}
+
+
+.container{
+  width: 400px;
+  height: min-content;
+  background-color: #917d7d;
+  border-radius: 12px;
+  padding: 28px;
+}
+
+.search-box{
+  width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-box input{
+  width: 84%;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #000;
+  background-color: #e6f5fb;
+  padding: 12px 16px;
+  border-radius: 14px;
+}
+
+.search-box input::placeholder{
+  color: #000;
+}
+
+.search-box button{
+  width: 46px;
+  height: 46px;
+  background-color: #e6f5fb;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.search-box button:hover{
+  color: #fff;
+  background-color: #ababab;
+}
+
+.weather-body{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 20px;
+  display: none;
+}
+.weather-body img{
+  width: 60%;
+}
+
+.weather-box{
+  margin-block: 20px;
+  text-align: center;
+}
+
+.weather-box .temperature{
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+}
+
+.weather-box .temperature sup{
+  font-size: 20px;
+  position: absolute;
+  font-weight: 600;
+}
+
+.weather-box .description{
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.weather-details{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.humidity, .wind{
+  display: flex;
+  align-items: center;
+}
+
+.humidity{
+  margin-left: 20px;
+}
+
+.wind{
+  margin-right: 20px;
+}
+
+.weather-details i{
+  font-size: 36px;
+}
+
+.weather-details .text{
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.text span{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.location-not-found{
+  margin-top: 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.location-not-found h1{
+  font-size: 20px;
+  color: #6b6b6b;
+  margin-block-end: 15px;
+}
+.location-not-found img{
+  width: 80%;
+}
 
 
